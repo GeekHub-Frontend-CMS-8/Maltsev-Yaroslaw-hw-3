@@ -1,0 +1,25 @@
+body {
+	margin-left: 1.5em;
+	height: 877px;
+	width: 620px;
+		/*РАзмер А4, только преобразованый в пиксели*/
+}
+.headline, legend {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+ .headline{
+ 	display: block;
+	margin-top: 1em;
+}
+fieldset {
+	margin-top: 1.2em;
+	border: 1px solid silver;
+}
+button {
+	margin-top: 1.2em;
+	margin-bottom: 1.2em;
+}
+#briefly > *{
+	margin-top: 1em;
+}

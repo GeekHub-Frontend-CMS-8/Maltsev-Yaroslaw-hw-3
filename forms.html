@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="CSS/forms.css">
+	<title>Формы</title>
+</head>
+<body>
+	<form action="" method="GET">
+		<header>
+			<h1>Урок "Формы": теги и их атрибуты</h1>
+			<h3>Расскажите немного о себе...</h3>
+			<span>Попробуйте создать аналогичную форму. Для целей демонстрации вполне сойдут и вымышленые</span>
+		</header>
+		<article>
+			<fieldset id="briefly">
+
+				<legend>Коротко о себе</legend>
+
+				<label for="name">Имя:</label>
+				<input type="text" id="name">
+				<br><label for="surname">Фамилия:</label>
+				<input type="text" id="surname">
+
+				<br><span>Пол:</span>	
+				<input type="radio" name="sex" id="male">
+				<label for="male">мужской</label>
+				<input type="radio" name="sex" id="female">
+				<label for="female">женский</label>
+
+				<br><label for="age">Возраст:</label>
+				<input type="text" id="age">
+				<label for="age">лет</label>
+			</fieldset>
+			<fieldset id="more">
+
+				<legend>Подробнее о себе</legend>
+		
+				<input type="radio" name="young" id="boy">
+				<label for="boy">Молодой чловек</label>
+				<br><input type="radio" name="young" id="girl">
+				<label for="girl">Девушка</label>
+
+				<br><input type="text" id="birthday">
+				<label for="birthday">Дата рождения</label>
+				<br><input type="text" id="family">
+				<label for="family">Семейное положение</label>
+				<br><input type="text" id="social">
+				<label for="social">Социальный статус</label>
+				<br><input type="text" id="residence">
+				<label for="residence">Местожительство</label>
+
+				<br><span class="headline">Что вы обычно делаете на выходных:</span>
+
+				<br><input type="checkbox" name="holiday" id="sleap">
+				<label for="sleap">Сплю</label>
+				<br><input type="checkbox" name="holiday" id="friend">
+				<label for="friend">Гуляю с друзьями</label>
+				<br><input type="checkbox" name="holiday" id="fishing">
+				<label for="fishing">Хожу на рыбалку</label>
+				<br><input type="checkbox" name="holiday" id="game">
+				<label for="game">Играю в игры</label>
+
+				<br><span class="headline">Рассказать о формах в книге, посвященной HTML:</span>
+
+				<br><select name="forms" id="form">
+					<option value="first">Site frequency:</option>
+					<option value="second">Lorem ipsum dolor sit amet.</option>
+				</select>
+
+				<br><span class="headline">Сколько книг вы прочиатли з свою жизнь:</span>
+
+				<br><input type="radio" name="books" id="ten">
+				<label for="ten">0-10</label>
+				<br><input type="radio" name="books" id="twenty">
+				<label for="twenty">11-20</label>
+				<br><input type="radio" name="books" id="fifty">
+				<label for="fifty">21-50</label>
+				<br><input type="radio" name="books" id="more_fifty">
+				<label for="more_fifty">50+</label>
+
+				<br><span class="headline">Ваши комментарии:</span>
+				<br><textarea name="comment" id="comments" cols="50" rows="10"></textarea>
+
+				<br><select name="positions" id="second" multiple="multiple">
+					<option value="position">Первая позиция</option>
+					<option value="position">Вторая позиция</option>
+					<option value="position">Третья позиция</option>
+				</select>
+			</fieldset>
+		</article>
+		<aside>
+			<fieldset id="end">
+				<legend>И в заключении</legend>
+
+				<label for="none"></label>
+				<input type="text" id="none" value="Это поле было введено до вас" readonly="readonly">
+				<br><label for="email" class="headline">Email</label>
+				<br><input type="text" id="email">
+
+				<br><span class="headline">Хотите подисаться на самую модную рассылку спама?</span>
+				<br><i>Выберите категории</i>
+
+				<br><input type="checkbox" name="categories" id="еquipment">
+				<label for="еquipment">Оборудование</label>
+				<br><input type="checkbox" name="categories" id="dinners">
+				<label for="dinners">Как приготовить обеды</label>
+				<br><input type="checkbox" name="categories" id="money">
+				<label for="money">Заработай миллион за два дня!</label>
+				
+				<br><span class="headline">На сколько сложная задача:</span>
+
+				<br><input type="radio" name="complexity" id="no">
+				<label for="no">Совсем нет</label>
+				<br><input type="radio" name="complexity" id="so-so">
+				<label for="so-so">Так себе</label>
+				<br><input type="radio" name="complexity" id="yes">
+				<label for="yes">Еле справились</label>
+			</fieldset>
+		</aside>
+		<button>Отправить</button>
+	</form>
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>

@@ -1,0 +1,15 @@
+.borders{
+	border: 1px solid silver;
+}
+.borders td, .borders th{
+	border: 1px solid black;
+}
+
+#first {
+	width: 100%;
+}
+.second {
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	margin-top: 1em;
+}
